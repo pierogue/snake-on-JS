@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#field {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    left: calc(50% - 180px);
+    background-color: greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#field  div{
+    width: 40px;
+    height: 40px;
+}
+
+
+#field div.snakeBody {
+    background-color: rgb(0, 128, 0);
+    position: absolute;
+    z-index: 5;
+}
+
+#field div#apple{
+    background-color: red;
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+}
+
+#field div.cell:nth-child(odd){
+    background-color:lawngreen;
+}
+
+span#loseText  {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+}
